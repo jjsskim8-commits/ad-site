@@ -1,0 +1,142 @@
+/* 홈(index) · 카테고리 페이지 전용 */
+
+/* --- 인트로 --- */
+.intro {
+  margin-bottom: var(--space-lg);
+}
+
+.intro__inner {
+  padding: var(--space-sm) 0 var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.intro__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.intro__text {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  max-width: 52ch;
+  line-height: 1.65;
+}
+
+/* --- 섹션 (간격 살짝 축소) --- */
+.section {
+  margin-bottom: var(--space-xl);
+}
+
+.section--tight {
+  margin-bottom: var(--space-lg);
+}
+
+.section__head {
+  margin-bottom: var(--space-sm);
+}
+
+.section__title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-accent);
+  letter-spacing: -0.02em;
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--color-point-soft);
+  display: inline-block;
+}
+
+/* --- 카테고리 그리드 --- */
+.cat-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm);
+}
+
+@media (min-width: 560px) {
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.cat-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  transition: border-color var(--transition-ui), box-shadow var(--transition-ui);
+}
+
+.cat-box:hover {
+  border-color: var(--color-point-border);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+.cat-box__title {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+  color: var(--color-text);
+}
+
+.cat-box__text {
+  font-size: 0.875rem;
+  color: var(--color-muted);
+  margin-bottom: var(--space-md);
+  line-height: 1.55;
+}
+
+/* --- 추천 글 리스트 --- */
+.pick-list {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+}
+
+.pick-list li + li {
+  margin-top: var(--space-xs);
+}
+
+.pick-list__link {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  text-decoration: none;
+  text-underline-offset: 3px;
+  padding: 0.35rem 0.35rem;
+  margin-left: -0.35rem;
+  border-radius: 6px;
+  transition: color var(--transition-ui), background var(--transition-ui);
+}
+
+.pick-list__link:hover {
+  color: var(--color-point);
+  background: var(--color-point-soft);
+  text-decoration: underline;
+  text-decoration-color: var(--color-point-border);
+}
+
+/* --- 카테고리 페이지 상단 --- */
+.page-head {
+  margin-bottom: var(--space-lg);
+  padding-bottom: var(--space-md);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.page-head__title {
+  font-size: 1.4rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-sm);
+  color: var(--color-accent);
+}
+
+.page-head__desc {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
