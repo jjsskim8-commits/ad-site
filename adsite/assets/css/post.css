@@ -4,6 +4,33 @@
   max-width: 640px;
 }
 
+.post__breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: var(--space-sm);
+}
+
+.post__breadcrumb a {
+  color: var(--color-muted);
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 2px;
+  transition: color var(--transition-ui), text-decoration-color var(--transition-ui);
+}
+
+.post__breadcrumb a:hover {
+  color: var(--color-point);
+  text-decoration-color: var(--color-point-border);
+}
+
+.post__crumb-sep {
+  opacity: 0.5;
+}
+
 .post__head {
   margin-bottom: var(--space-lg);
   padding-bottom: var(--space-md);
@@ -37,13 +64,14 @@
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.3;
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .post__lead {
   font-size: 1rem;
   margin-bottom: var(--space-lg);
-  line-height: 1.7;
+  line-height: 1.72;
+  color: var(--color-body);
 }
 
 .post__lead strong {
@@ -58,6 +86,8 @@
 .post__section p {
   margin-bottom: var(--space-md);
   font-size: 0.98rem;
+  color: var(--color-body);
+  line-height: 1.72;
 }
 
 .post__section p:last-child {
@@ -66,10 +96,10 @@
 
 .post__h2 {
   font-size: 1.22rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: var(--space-sm);
   margin-top: var(--space-md);
-  color: var(--color-accent);
+  color: var(--color-text);
   letter-spacing: -0.02em;
 }
 
@@ -79,9 +109,10 @@
 
 .post__h3 {
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: var(--space-xs);
   margin-top: var(--space-md);
+  color: var(--color-text);
 }
 
 .post__list {
@@ -92,6 +123,7 @@
 
 .post__list li {
   margin-bottom: var(--space-xs);
+  color: var(--color-body);
 }
 
 .post__list--plain {
@@ -112,6 +144,7 @@
 
 .post__ol li {
   margin-bottom: var(--space-xs);
+  color: var(--color-body);
 }
 
 .post__check {
@@ -158,14 +191,15 @@
 .post__closing {
   font-size: 0.98rem;
   margin-bottom: var(--space-lg);
-  line-height: 1.65;
+  line-height: 1.72;
+  color: var(--color-body);
 }
 
 .post__related-title {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: var(--space-sm);
-  color: var(--color-accent);
+  color: var(--color-text);
 }
 
 .post__related-list {

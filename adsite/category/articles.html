@@ -3,98 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/images/icon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="../assets/images/icon/favicon.png">
   <meta name="description" content="전체 글 목록·실전 문장 모음 — 조용한 성장 가이드">
   <title>글 모음 — 조용한 성장 가이드</title>
   <link rel="stylesheet" href="../assets/css/commons.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-  <header class="header">
-    <div class="header__inner">
-      <a class="header__logo" href="../index.html">조용한 성장 가이드</a>
-      <button type="button" class="header__menu-btn" aria-expanded="false" aria-controls="site-nav">메뉴</button>
-      <nav class="nav" id="site-nav" aria-label="주요 메뉴">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="bootcamp.html">부트캠프 적응</a></li>
-          <li class="nav__item"><a class="nav__link" href="study.html">공부 루틴</a></li>
-          <li class="nav__item"><a class="nav__link" href="collaboration.html">협업 가이드</a></li>
-          <li class="nav__item"><a class="nav__link" href="workplace.html">직장 적응</a></li>
-          <li class="nav__item"><a class="nav__link nav__link--current" href="articles.html">글 모음</a></li>
+<body data-nav-current="articles">
+  <div id="site-header-mount"></div>
+
+  <main class="main category-page category-page--articles">
+    <section class="section category-page__hero" aria-labelledby="category-heading">
+      <p class="category-page__eyebrow">CATEGORY</p>
+      <h1 class="category-page__title" id="category-heading">글 모음</h1>
+      <p class="category-page__desc">전체 글을 한 화면에서 비교하며 읽고 싶은 분을 위한 페이지입니다. 주제별로 글을 빠르게 훑을 수 있도록 구조를 정리했습니다.</p>
+    </section>
+
+    <section class="section category-page__doc" aria-labelledby="doc-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="doc-heading">글 모음 안내와 목차형 정보</h2>
+      </div>
+      <article class="category-page__doc-inner">
+        <p>조용한 성장 가이드의 글 모음 페이지는 부트캠프 적응, 공부 루틴, 협업 가이드, 직장 적응, 실전 문장과 같이 서로 다른 상황에 맞는 글을 한곳에서 비교할 수 있도록 만든 색인 문서입니다. 사용자는 상단의 짧은 설명으로 페이지 목적을 파악한 뒤, 대표 글과 전체 글 목록을 오가며 자신에게 맞는 글을 고를 수 있습니다. 검색 엔진이 이해하기 좋은 형태로, 이 섹션에서는 제목 계층과 목록을 규칙적으로 쓰고, 문단은 한 가지 주제만 담도록 나누었습니다.</p>
+        <p>문서를 만들 때 가장 중요한 규칙 중 하나는 대표 제목인 <strong>제목 수준 1</strong>을 페이지마다 한 번만 쓰는 것입니다. 이 페이지에서는 상단 히어로의 글 모음이 그 역할을 하며, 아래의 안내·목록·카드 제목은 모두 제목 수준 2와 제목 수준 3으로 단계를 맞춥니다. 이렇게 하면 화면 읽기 프로그램 사용자에게도 계층이 분명해지고, 검색 결과에서 페이지 주제가 흐려지는 일을 줄일 수 있습니다.</p>
+        <h3>페이지 목적과 활용</h3>
+        <ul>
+          <li>전체 글의 제목, 날짜, 짧은 요약을 한 번에 훑어 읽을 길을 고르는 색인 역할을 합니다.</li>
+          <li>대표 글 영역은 처음 방문한 사람이 가장 먼저 익히면 좋은 질문 문장 모음으로 연결됩니다.</li>
+          <li>목록 카드는 각 상세 글로 이어지는 내부 링크를 담고, 같은 사이트 안에서 주제를 자연스럽게 이어 줍니다.</li>
+          <li>부트캠프·공부·협업·직장처럼 상황이 다른 주제가 한 페이지에 모이므로, 상황에 맞춰 읽기 순서를 바꿀 수 있다는 점을 안내합니다.</li>
+          <li>앞으로 글이 늘어날 때를 대비해, 주제별로 섹션을 나누고 목록을 유지하기 쉬운 구조를 지향합니다.</li>
         </ul>
-      </nav>
-    </div>
-  </header>
+        <h3>추천 읽기 순서 예시</h3>
+        <p>아래 번호 목록은 반드시 지켜야 하는 순서는 아니며, 막힌 지점이 분명할 때 우선순위를 정하는 참고용입니다. 순서가 중요한 절차를 설명할 때는 번호 목록을 쓰고, 서로 비슷한 중요도의 항목을 나열할 때는 불릿 목록을 쓰는 것이 일반적인 문서 규칙에 맞습니다.</p>
+        <ol>
+          <li>혼자서는 한계가 느껴질 때 질문 문장을 정리한 글부터 읽어 도움 요청 방식을 익힙니다.</li>
+          <li>팀 과제에서 역할과 기록이 애매할 때 협업 가이드 글을 읽어 기여 방식을 점검합니다.</li>
+          <li>집중이 자주 끊길 때 짧은 복구 루틴 글을 읽어 공부 흐름을 다시 붙입니다.</li>
+          <li>부트캠프 초반이면 첫 이주 루틴 글을 읽어 과제와 휴식의 균형을 잡습니다.</li>
+          <li>직장에서 보고가 어렵다면 신입 보고 방식 글을 읽어 정보 단위와 순서를 맞춥니다.</li>
+          <li>여러 글을 읽은 뒤에는 이 페이지로 돌아와 다음에 읽을 글만 골라 두면 학습 계획이 단순해집니다.</li>
+        </ol>
+        <h3>목록 태그를 규칙적으로 쓰는 이유</h3>
+        <ul>
+          <li>불릿 목록은 항목의 순서를 바꿔도 의미가 변하지 않을 때 쓰는 것이 좋습니다.</li>
+          <li>번호 목록은 앞 단계를 건너뛰면 다음 단계가 성립하기 어려울 때 쓰는 것이 좋습니다.</li>
+          <li>목록 안에 또 다른 목록을 넣을 때는 들여쓰기와 중첩 규칙을 맞추어 스크린 리더가 단계를 읽을 수 있게 합니다.</li>
+          <li>한 항목에 문장이 너무 길어지면 항목을 나누거나 문단으로 옮겨 가독성을 지킵니다.</li>
+        </ul>
+        <p>검색 품질을 높이려면 메타 설명만으로는 부족하고, 본문에 페이지가 다루는 주제와 사용자가 얻을 수 있는 결과가 구체적으로 드러나야 합니다. 그래서 이 안내 문단에서는 글 모음이 제공하는 기능, 대표 글의 역할, 카드 목록의 역할, 읽기 순서를 바꾸는 방법, 문서 규칙과 접근성, 내부 링크의 의미를 차례로 설명합니다. 또한 구글·네이버·빙과 같은 검색 엔진은 공통적으로 의미 있는 제목, 명확한 구조, 자연스러운 문장, 사용자에게 실제 도움이 되는 내용을 중시합니다.</p>
+        <p>구조화된 데이터를 페이지에 넣는 방법은 검색 엔진별 도움말에서 형식을 확인한 뒤, 글 목록이나 빵부스러기 경로에 맞는 항목만 골라 넣는 것이 안전합니다. 이 사이트의 다른 글에서도 본문 안에 정의된 용어와 예시를 일관되게 쓰면, 같은 주제를 검색한 사용자가 여러 페이지를 오가며 이해하기 쉬워집니다. 글이 늘어날수록 글 모음의 안내 문단도 주기적으로 업데이트하여 새 글의 위치와 읽는 팁을 반영하는 것이 좋습니다.</p>
+        <p>내부 링크는 사용자가 다음 행동을 예측할 수 있게 문맥과 함께 배치하는 것이 좋습니다. 아래 링크처럼 문장 안에서 바로 이동할 수 있게 연결하면 <strong>탐색 흐름</strong>이 자연스러워지고, 검색 엔진도 페이지 간 관계를 더 쉽게 이해할 수 있습니다.</p>
+        <ul>
+          <li><a href="../posts/question-phrases.html">재시도 후에도 안 될 때 쓰는 질문 문장 5가지</a>: 학습·협업·업무에서 공통으로 쓰는 질문 문장을 정리한 글입니다.</li>
+          <li><a href="../posts/teamplay-guide.html">팀플에서 말수 적어도 기여하는 방법</a>: 역할 제안과 기록 중심 협업 흐름을 익히는 글입니다.</li>
+          <li><a href="../posts/bootcamp-first-two-weeks.html">부트캠프 첫 2주를 버티는 루틴</a>: 초반 과제 밀도에 맞춘 루틴 설계 글입니다.</li>
+          <li><a href="../posts/meeting-recovery-routine.html">집중이 끊겼을 때 10분 공부 복구 루틴</a>: 집중 복구 단계를 짧게 적용하는 글입니다.</li>
+          <li><a href="../posts/quiet-newbie-reporting.html">조용한 신입이 신뢰 얻는 보고 방식</a>: 보고 순서와 정보 단위를 실전 기준으로 설명한 글입니다.</li>
+        </ul>
+        <p>문서 길이 측면에서 본문은 공백을 제외한 글자 수로도 충분한 정보를 제공해야 검색 엔진이 페이지 주제를 신뢰하기 쉽습니다. 이 페이지의 안내 섹션은 그 기준을 충족하도록 여러 문단과 두 종류의 목록으로 구성하였습니다. 짧은 문장만 반복하는 것이 아니라, 실제 사용 시나리오와 문서 규칙, 접근성, 링크 전략까지 폭넓게 설명하여 같은 주제로 검색한 사용자의 질문에 답할 수 있게 하였습니다. 핵심은 <strong>의미 있는 제목 계층</strong>, <strong>자연스러운 내부 링크</strong>, <strong>중복되지 않는 본문</strong>을 함께 지키는 것입니다.</p>
+        <h3>접근성과 제목 계층을 함께 맞추기</h3>
+        <ul>
+          <li>대표 제목은 한 페이지에 하나만 두고, 그 아래는 제목 수준 2로 큰 묶음을 나눕니다.</li>
+          <li>제목 수준 3은 제목 수준 2보다 작은 주제 묶음에 쓰고, 단계를 건너뛰지 않습니다.</li>
+          <li>목록 항목의 첫머리는 가능하면 짧은 동사나 명사로 시작해 스캔하기 쉽게 합니다.</li>
+          <li>링크 텍스트는 여기를 클릭 같은 막연한 표현 대신 글 제목이나 목적이 드러나게 씁니다.</li>
+        </ul>
+        <p>검색 노출은 한 번에 완성되는 것이 아니라, 제목과 본문과 구조가 오랫동안 일관될 때 안정적으로 개선되는 경우가 많습니다. 글 모음은 사이트 전체의 관문 역할을 하므로, 안내 문구가 오래된 정보를 담지 않도록 주기적으로 점검하는 습관을 권장합니다. 새 글이 추가되면 목록 카드에 반영하고, 대표 글 후보가 바뀌면 대표 영역 설명도 함께 고칩니다.</p>
+        <p>마지막으로 이 페이지는 카테고리별 상세 페이지와 글 본문을 잇는 허브이므로, 사용자가 글 모음에서 출발해 각 글을 읽고 다시 돌아오는 동선을 상상하며 문장을 다듬는 것이 좋습니다. 허브 페이지가 명확할수록 사이트 전체 체류와 이해가 개선되고, 검색 엔진도 사이트 구조를 더 잘 파악할 수 있습니다. 이상의 내용은 글 모음의 목적, 규칙, 활용법을 한데 모은 안내 본문이며, 상단의 목록 카드와 함께 읽으면 사이트 탐색이 수월해집니다.</p>
+        <p>추가로, 이미지나 동영상을 넣는다면 대체 텍스트를 짧고 정확하게 써서 시각 정보가 없는 사용자도 맥락을 이해할 수 있게 하는 것이 좋습니다. 표 형태의 정보를 다룰 때는 표 제목과 열 머리글을 맞추고, 복잡한 표는 여러 작은 표로 나누는 편이 해석에 유리한 경우가 많습니다. 코드나 예시 문장을 인용할 때는 출처와 용도를 한 줄이라도 적어 두면 독자가 글의 범위를 오해하지 않습니다.</p>
+        <p>검색 엔진은 페이지마다 중복된 큰 문단을 여러 곳에 복사해 붙이는 방식을 선호하지 않으므로, 글 모음 안내는 이 페이지에만 두고 다른 페이지에서는 요약과 링크로 연결하는 편이 안전합니다. 대신 각 상세 글에서는 해당 주제만 깊게 설명하고, 글 모음에서는 전체 지도 역할에 집중하는 전략이 효과적입니다. 이렇게 역할을 나누면 사이트 전체의 주제가 분명해지고, 사용자가 어디서 무엇을 읽어야 할지 혼란이 줄어듭니다.</p>
+        <p>운영 측면에서는 글 제목이 바뀌거나 날짜가 갱신될 때마다 글 모음 카드의 텍스트도 함께 맞추는 것이 중요합니다. 제목과 요약이 본문의 첫 부분과 어긋나면 이탈이 늘고, 검색 결과에서 기대와 다른 페이지로 인식될 수 있습니다. 변경 이력을 짧게라도 남겨 두면 나중에 문구를 되돌리거나 실험할 때도 도움이 됩니다.</p>
+        <p>네이버·구글·빙 모두 공통적으로 빠른 로딩, 모바일에서 읽기 쉬운 레이아웃, 깨지지 않는 내부 링크를 권장합니다. 정적 사이트라면 배포 전에 링크 검사를 돌려 깨진 링크를 제거하고, 긴 안내 문단은 작은 제목과 목록으로 나누어 스크롤 중에도 위치를 찾기 쉽게 만드는 것이 좋습니다. 사이트에 실제 도메인이 정해지면 구조화된 데이터에 절대 주소를 넣는 방식으로 확장할 수 있으며, 그때는 검색 엔진 도움말의 예시 형식을 그대로 따르는 것이 안전합니다.</p>
+      </article>
+    </section>
 
-  <main class="main">
-    <header class="page-head">
-      <h1 class="page-head__title">글 모음</h1>
-      <p class="page-head__desc">사이트에 실린 글을 주제별로 한곳에서 찾을 수 있습니다. 실전 문장·질문 표현은 별도 글로 정리되어 있습니다.</p>
-    </header>
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="featured-heading">대표 글</h2>
+      </div>
+      <article class="category-page__featured">
+        <p class="category-page__featured-label">입문 추천</p>
+        <h3 class="category-page__featured-title">재시도 후에도 안 될 때 쓰는 질문 문장 5가지</h3>
+        <p class="category-page__featured-desc">학습·협업·업무 상황에서 모두 활용할 수 있는 기본 질문 문장을 먼저 익힐 수 있습니다.</p>
+        <a class="btn btn--primary" href="../posts/question-phrases.html">대표 글 읽기</a>
+      </article>
+    </section>
 
-    <ul class="card-list">
-      <li>
-        <article class="card">
-          <a class="card__link" href="../posts/question-phrases.html">
-            <span class="card__meta"><span class="card__cat">실전 문장</span><time datetime="2026-04-01">2026-04-01</time></span>
-            <h2 class="card__title">재시도 후에도 안 될 때 쓰는 질문 문장 5가지</h2>
-            <p class="card__desc">혼자 해결에 한계가 있을 때 상대방에게 넘기는 표현입니다.</p>
-          </a>
-        </article>
-      </li>
-      <li>
-        <article class="card">
-          <a class="card__link" href="../posts/teamplay-guide.html">
-            <span class="card__meta"><span class="card__cat">협업</span><time datetime="2026-04-03">2026-04-03</time></span>
-            <h2 class="card__title">팀플에서 말수 적어도 기여하는 방법</h2>
-            <p class="card__desc">역할 분담·기록·동기화 문장을 중심으로 설명합니다.</p>
-          </a>
-        </article>
-      </li>
-      <li>
-        <article class="card">
-          <a class="card__link" href="../posts/bootcamp-first-two-weeks.html">
-            <span class="card__meta"><span class="card__cat">부트캠프 · 공부 루틴</span><time datetime="2026-04-05">2026-04-05</time></span>
-            <h2 class="card__title">부트캠프 첫 2주를 버티는 루틴</h2>
-            <p class="card__desc">과제·질문·휴식을 나누는 현실적인 주간 패턴입니다.</p>
-          </a>
-        </article>
-      </li>
-      <li>
-        <article class="card">
-          <a class="card__link" href="../posts/meeting-recovery-routine.html">
-            <span class="card__meta"><span class="card__cat">직장 · 공부 루틴</span><time datetime="2026-04-08">2026-04-08</time></span>
-            <h2 class="card__title">회의 후 10분 회복 루틴</h2>
-            <p class="card__desc">회의 직후 집중력을 되찾는 짧은 절차와 체크리스트입니다.</p>
-          </a>
-        </article>
-      </li>
-      <li>
-        <article class="card">
-          <a class="card__link" href="../posts/quiet-newbie-reporting.html">
-            <span class="card__meta"><span class="card__cat">직장</span><time datetime="2026-04-10">2026-04-10</time></span>
-            <h2 class="card__title">조용한 신입이 신뢰 얻는 보고 방식</h2>
-            <p class="card__desc">말이 많지 않을 때 상급자가 기대하는 정보 단위와 보고 순서입니다.</p>
-          </a>
-        </article>
-      </li>
-    </ul>
+    <section class="section category-page__related" aria-labelledby="related-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="related-heading">전체 글 목록</h2>
+      </div>
+      <ul class="card-list">
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/question-phrases.html">
+              <span class="card__meta"><span class="card__cat">실전 문장</span><time datetime="2026-04-01">2026-04-01</time></span>
+              <h3 class="card__title">재시도 후에도 안 될 때 쓰는 질문 문장 5가지</h3>
+              <p class="card__desc">혼자 해결에 한계가 있을 때 상대방에게 도움을 요청하는 표현 모음입니다.</p>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/teamplay-guide.html">
+              <span class="card__meta"><span class="card__cat">협업</span><time datetime="2026-04-03">2026-04-03</time></span>
+              <h3 class="card__title">팀플에서 말수 적어도 기여하는 방법</h3>
+              <p class="card__desc">역할 분담, 기록, 일정 동기화로 협업 기여를 만드는 방법입니다.</p>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/bootcamp-first-two-weeks.html">
+              <span class="card__meta"><span class="card__cat">부트캠프 · 공부 루틴</span><time datetime="2026-04-05">2026-04-05</time></span>
+              <h3 class="card__title">부트캠프 첫 2주를 버티는 루틴</h3>
+              <p class="card__desc">과제·질문·휴식을 나누는 현실적인 주간 패턴을 제안합니다.</p>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/meeting-recovery-routine.html">
+              <span class="card__meta"><span class="card__cat">공부 루틴</span><time datetime="2026-04-08">2026-04-08</time></span>
+              <h3 class="card__title">집중이 끊겼을 때 10분 공부 복구 루틴</h3>
+              <p class="card__desc">공부하다 흐름이 끊겼을 때 짧게 복구해 다시 붙는 10분 루틴입니다.</p>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/quiet-newbie-reporting.html">
+              <span class="card__meta"><span class="card__cat">직장</span><time datetime="2026-04-10">2026-04-10</time></span>
+              <h3 class="card__title">조용한 신입이 신뢰 얻는 보고 방식</h3>
+              <p class="card__desc">상급자가 기대하는 정보 단위와 보고 순서를 실제 예시 중심으로 정리했습니다.</p>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__inner">
-      <p class="footer__brand">조용한 성장 가이드</p>
-      <p class="footer__desc">부트캠프·공부·협업·직장 적응에 필요한 실행 정보를 글로 정리합니다.</p>
-      <nav class="footer__nav" aria-label="푸터 카테고리">
-        <a href="bootcamp.html">부트캠프</a>
-        <a href="study.html">공부 루틴</a>
-        <a href="collaboration.html">협업</a>
-        <a href="workplace.html">직장</a>
-        <a href="articles.html">글 모음</a>
-      </nav>
-      <p class="footer__legal">개인정보처리방침·문의 페이지는 추후 추가 예정입니다.</p>
-      <p class="footer__copy">&copy; 2026 조용한 성장 가이드. 무단 전재·재배포를 금지합니다.</p>
-    </div>
-  </footer>
+  <div id="site-footer-mount"></div>
+  <script src="../assets/js/layout.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
 </body>
 </html>

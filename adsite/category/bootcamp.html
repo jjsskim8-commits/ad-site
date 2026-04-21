@@ -3,62 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/images/icon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="../assets/images/icon/favicon.png">
   <meta name="description" content="부트캠프 초반 적응, 과제·질문·루틴 관련 글 목록 — 조용한 성장 가이드">
   <title>부트캠프 적응 — 조용한 성장 가이드</title>
   <link rel="stylesheet" href="../assets/css/commons.css">
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
-  <header class="header">
-    <div class="header__inner">
-      <a class="header__logo" href="../index.html">조용한 성장 가이드</a>
-      <button type="button" class="header__menu-btn" aria-expanded="false" aria-controls="site-nav">메뉴</button>
-      <nav class="nav" id="site-nav" aria-label="주요 메뉴">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link nav__link--current" href="bootcamp.html">부트캠프 적응</a></li>
-          <li class="nav__item"><a class="nav__link" href="study.html">공부 루틴</a></li>
-          <li class="nav__item"><a class="nav__link" href="collaboration.html">협업 가이드</a></li>
-          <li class="nav__item"><a class="nav__link" href="workplace.html">직장 적응</a></li>
-          <li class="nav__item"><a class="nav__link" href="articles.html">글 모음</a></li>
+<body data-nav-current="bootcamp">
+  <div id="site-header-mount"></div>
+
+  <main class="main category-page category-page--bootcamp">
+    <section class="section category-page__hero" aria-labelledby="category-heading">
+      <p class="category-page__eyebrow">CATEGORY</p>
+      <h1 class="category-page__title" id="category-heading">부트캠프 적응</h1>
+      <p class="category-page__desc">빠른 속도의 커리큘럼에서 흔들리기 쉬운 첫 시기를 버티기 위해, 과제·질문·생활 리듬을 함께 관리하는 실전 루틴을 제공합니다.</p>
+    </section>
+
+    <section class="section category-page__doc" aria-labelledby="doc-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="doc-heading">부트캠프 적응 가이드와 실행 순서</h2>
+      </div>
+      <article class="category-page__doc-inner">
+        <p>부트캠프 적응 페이지는 초반 이탈을 줄이고 학습 밀도를 안정적으로 유지하기 위한 안내 문서입니다. 이 문서는 단순히 글 링크를 나열하는 페이지가 아니라, 처음 입과한 학습자가 어떤 순서로 글을 읽고 어떤 행동으로 이어가야 하는지까지 보여 주는 <strong>실행형 색인</strong>입니다. 빠른 커리큘럼에서는 하루만 흐트러져도 과제, 복습, 팀 활동이 동시에 밀릴 수 있기 때문에, 첫 주부터 생활 리듬과 질문 방식, 집중 회복 루틴을 함께 설계해야 합니다.</p>
+        <p>검색 엔진 관점에서도 이 페이지는 부트캠프 관련 핵심 주제를 한곳에 모아 설명하는 허브 역할을 합니다. 페이지당 대표 제목은 하나만 유지하고, 그 아래에서 소제목을 단계적으로 구성하면 문서 구조가 분명해집니다. 사용자는 위에서 아래로 읽으며 자연스럽게 핵심 정보를 파악하고, 필요한 상세 글로 이동할 수 있습니다. 이 방식은 구글, 네이버, 빙 모두에서 권장하는 <strong>명확한 문서 계층</strong>과 <strong>의미 중심 HTML</strong>에 부합합니다.</p>
+
+        <h3>이 페이지를 먼저 읽어야 하는 이유</h3>
+        <ul>
+          <li>부트캠프 초반에 자주 발생하는 과제 지연, 수면 붕괴, 질문 타이밍 실수를 한 번에 점검할 수 있습니다.</li>
+          <li>대표 글과 관련 글의 연결 흐름이 있어 상황에 맞는 다음 읽기 경로를 빠르게 선택할 수 있습니다.</li>
+          <li>제목, 문단, 목록이 분리되어 있어 짧은 시간에도 필요한 항목만 골라 확인하기 쉽습니다.</li>
+          <li>실행 순서가 필요한 내용은 번호 목록으로, 참고 항목은 불릿 목록으로 구분해 이해 부담을 줄였습니다.</li>
         </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main class="main">
-    <header class="page-head">
-      <h1 class="page-head__title">부트캠프 적응</h1>
-      <p class="page-head__desc">짧은 기간에 과제와 학습량이 몰리는 환경에서, 말수와 관계없이 실행 가능한 일정·질문·휴식 패턴을 다룹니다.</p>
-    </header>
+        <h3>부트캠프 첫 2주 권장 실행 순서</h3>
+        <p>아래 순서는 강제 규칙이 아니라 학습자가 흔들릴 때 다시 기준을 잡기 위한 기본 프레임입니다. 순서형 정보를 명확히 전달하기 위해 번호 목록을 사용했습니다.</p>
+        <ol>
+          <li>주간 루틴 기준선을 먼저 정합니다. 취침, 기상, 학습 시작 시간을 대략이라도 고정해야 과제 품질이 안정됩니다.</li>
+          <li>과제를 받으면 즉시 작업 전부를 시작하지 말고, 작은 단위로 분해해 당일 목표와 주간 목표를 분리합니다.</li>
+          <li>막히는 지점이 생기면 감으로 버티지 말고 <a href="../posts/question-phrases.html">질문 문장 가이드</a>를 참고해 빠르게 도움 요청합니다.</li>
+          <li>장시간 집중 후 흐름이 끊기면 <a href="../posts/meeting-recovery-routine.html">10분 복구 루틴</a>으로 학습 모드에 복귀합니다.</li>
+          <li>일주일 단위로 실행 결과를 기록해 다음 주 계획에 반영합니다. 기록은 짧아도 되지만 반드시 남기는 것이 좋습니다.</li>
+        </ol>
 
-    <ul class="card-list">
-      <li>
-        <article class="card">
-          <a class="card__link" href="../posts/bootcamp-first-two-weeks.html">
-            <span class="card__meta"><time datetime="2026-04-05">2026-04-05</time></span>
-            <h2 class="card__title">부트캠프 첫 2주를 버티는 루틴</h2>
-            <p class="card__desc">첫 2주에 과제·질문·수면을 나누는 주간 단위 루틴과 체크리스트입니다.</p>
-          </a>
-        </article>
-      </li>
-    </ul>
+        <h3>초반 적응에서 자주 놓치는 핵심 포인트</h3>
+        <ul>
+          <li><strong>질문 지연</strong>: 스스로 해결하려는 태도는 중요하지만, 질문이 늦으면 전체 일정이 더 크게 밀릴 수 있습니다.</li>
+          <li><strong>복습 누락</strong>: 과제 제출만 반복하면 이해가 얕아져 다음 주차에서 급격히 흔들릴 가능성이 큽니다.</li>
+          <li><strong>수면 붕괴</strong>: 단기적으로는 시간을 번 것처럼 보이지만, 장기적으로는 집중 품질과 기억 정착이 떨어집니다.</li>
+          <li><strong>기록 부재</strong>: 매일 무엇이 막혔는지 남기지 않으면 같은 실수를 반복하기 쉽습니다.</li>
+        </ul>
+
+        <p>내부 링크는 문맥과 함께 배치할 때 가장 효과적입니다. 예를 들어 과제가 멈춘 상태라면 질문 문장 글을 먼저 읽고, 머리가 멍해져 집중이 끊긴 상태라면 복구 루틴 글부터 보는 방식이 합리적입니다. 루틴 자체를 정비하려면 <a href="../posts/bootcamp-first-two-weeks.html">부트캠프 첫 2주를 버티는 루틴</a>을 기준 문서로 삼는 것이 좋습니다. 이렇게 링크를 상황과 함께 안내하면 사용자는 클릭 이유를 이해한 상태로 이동하게 되고, 검색 엔진도 페이지 간 관계를 더 안정적으로 해석할 수 있습니다.</p>
+        <p>이 페이지는 과장된 문구보다 실제 행동으로 연결되는 정보를 우선합니다. 오늘 해야 할 일, 이번 주에 유지할 기준, 막혔을 때 바로 사용할 문장처럼 즉시 적용 가능한 항목을 본문에서 강조했습니다. 부트캠프 적응은 의지만으로 해결되지 않으며, 구조화된 습관과 기록이 반복될 때 비로소 안정됩니다. 따라서 문서의 길이와 구성도 짧은 홍보성 문장보다, 구체적이고 맥락이 있는 설명을 중심으로 유지하는 것이 좋습니다.</p>
+        <p>또한 페이지 구조는 디자인을 해치지 않는 범위에서 시맨틱 태그를 활용해야 합니다. 섹션은 주제 단위로 분리하고, 문단은 한 문단에 하나의 핵심만 담아 읽기 흐름을 단순하게 만드는 방식이 유리합니다. 카드 목록에서는 날짜를 <code>time</code> 태그로 유지해 정보 신뢰도를 높이고, 제목은 중복을 줄여 검색 결과에서 각 글의 역할이 구분되도록 했습니다. 이는 사용자 경험과 SEO 품질을 동시에 높이는 기본 규칙입니다.</p>
+
+        <h3>부트캠프 적응 체크리스트</h3>
+        <ul>
+          <li>이번 주 기준 수면 시간과 학습 시작 시간을 정했는가</li>
+          <li>과제를 작은 단위로 나눈 뒤 우선순위를 표시했는가</li>
+          <li>막힌 문제를 질문 문장 형태로 정리해 요청했는가</li>
+          <li>집중이 끊겼을 때 10분 복구 루틴을 실제로 실행했는가</li>
+          <li>하루 마무리 시 내일 할 일 세 가지를 기록했는가</li>
+        </ul>
+
+        <p>정리하면, 부트캠프 적응은 대단한 비법보다 기본을 꾸준히 반복하는 과정입니다. 이 페이지는 그 반복을 돕기 위해 대표 글, 관련 글, 읽기 순서, 체크리스트를 하나의 문서 흐름으로 묶었습니다. 처음에는 모든 항목을 완벽히 지키기 어렵더라도, 매일 한두 가지 기준만 유지해도 학습 안정성은 빠르게 올라갑니다. 부트캠프의 속도가 부담스럽게 느껴질수록 기준 문서를 자주 확인하고, 필요한 글로 바로 이동해 작은 실행을 이어가길 권장합니다.</p>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="featured-heading">대표 글</h2>
+      </div>
+      <article class="category-page__featured">
+        <p class="category-page__featured-label">첫 2주 핵심 가이드</p>
+        <h3 class="category-page__featured-title">부트캠프 첫 2주를 버티는 루틴</h3>
+        <p class="category-page__featured-desc">과제와 복습, 수면 회복을 균형 있게 나누는 일정 템플릿을 제안합니다.</p>
+        <a class="btn btn--primary" href="../posts/bootcamp-first-two-weeks.html">대표 글 읽기</a>
+      </article>
+    </section>
+
+    <section class="section category-page__related" aria-labelledby="related-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="related-heading">관련 글</h2>
+        <p class="section__desc">함께 보면 루틴 정착에 도움이 되는 글입니다.</p>
+      </div>
+      <ul class="card-list card-list--two">
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/question-phrases.html">
+              <span class="card__meta"><span class="card__cat">실전 문장</span><time datetime="2026-04-01">2026-04-01</time></span>
+              <h3 class="card__title">재시도 후에도 안 될 때 쓰는 질문 문장 5가지</h3>
+              <p class="card__desc">과제가 막혔을 때 질문 시간을 줄이고 학습 흐름을 지키는 문장 구조입니다.</p>
+            </a>
+          </article>
+        </li>
+        <li>
+          <article class="card">
+            <a class="card__link" href="../posts/meeting-recovery-routine.html">
+              <span class="card__meta"><span class="card__cat">공부 루틴</span><time datetime="2026-04-08">2026-04-08</time></span>
+              <h3 class="card__title">집중이 끊겼을 때 10분 공부 복구 루틴</h3>
+              <p class="card__desc">장시간 과제 후 흐름이 끊겼을 때 빠르게 복귀하는 짧은 루틴입니다.</p>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <section class="section category-page__assist" aria-labelledby="assist-heading">
+      <div class="section__head">
+        <h2 class="section__title" id="assist-heading">추천 읽기 흐름</h2>
+      </div>
+      <ul class="starter-list">
+        <li><a class="starter-list__link" href="../posts/bootcamp-first-two-weeks.html"><strong class="starter-list__title">1) 주간 루틴 먼저 익히기</strong><span class="starter-list__desc">과제·수면·질문을 어떻게 나눌지 큰 틀을 먼저 잡습니다.</span></a></li>
+        <li><a class="starter-list__link" href="../posts/question-phrases.html"><strong class="starter-list__title">2) 막힘 대응 문장 준비</strong><span class="starter-list__desc">질문 문장을 미리 갖춰서 학습 속도를 유지합니다.</span></a></li>
+      </ul>
+    </section>
   </main>
 
-  <footer class="footer">
-    <div class="footer__inner">
-      <p class="footer__brand">조용한 성장 가이드</p>
-      <p class="footer__desc">부트캠프·공부·협업·직장 적응에 필요한 실행 정보를 글로 정리합니다.</p>
-      <nav class="footer__nav" aria-label="푸터 카테고리">
-        <a href="bootcamp.html">부트캠프</a>
-        <a href="study.html">공부 루틴</a>
-        <a href="collaboration.html">협업</a>
-        <a href="workplace.html">직장</a>
-        <a href="articles.html">글 모음</a>
-      </nav>
-      <p class="footer__legal">개인정보처리방침·문의 페이지는 추후 추가 예정입니다.</p>
-      <p class="footer__copy">&copy; 2026 조용한 성장 가이드. 무단 전재·재배포를 금지합니다.</p>
-    </div>
-  </footer>
+  <div id="site-footer-mount"></div>
+  <script src="../assets/js/layout.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
 </body>
 </html>
