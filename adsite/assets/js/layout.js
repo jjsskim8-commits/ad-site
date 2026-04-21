@@ -61,22 +61,13 @@
   var footerTpl =
     '<footer class="footer" role="contentinfo">' +
     '<div class="footer__inner">' +
-    '<div class="footer__top">' +
-    '<div class="footer__about">' +
-    '<p class="footer__brand">조용한 성장 가이드</p>' +
-    "<p class=\"footer__desc\">부트캠프·공부·협업·직장 적응에 필요한 실행 정보를 글로 정리합니다.</p>" +
+    '<p class="footer__copyright">&copy; 2026 조용한 성장 가이드. All rights reserved.</p>' +
+    '<div class="footer__links">' +
+    '<a href="{{LINK:terms.html}}">이용약관</a>' +
+    '<a href="{{LINK:privacy.html}}">개인정보처리방침</a>' +
+    '<a href="mailto:jjsskim8@gmail.com">문의하기</a>' +
     "</div>" +
-    '<nav class="footer__nav" aria-label="푸터 카테고리">' +
-    '<a href="{{LINK:category/bootcamp.html}}">부트캠프 적응</a>' +
-    '<a href="{{LINK:category/study.html}}">공부 루틴</a>' +
-    '<a href="{{LINK:category/collaboration.html}}">협업 가이드</a>' +
-    '<a href="{{LINK:category/workplace.html}}">직장 적응</a>' +
-    '<a href="{{LINK:category/articles.html}}">글 모음</a>' +
-    "</nav></div>" +
-    '<div class="footer__bottom">' +
-    '<p class="footer__legal">개인정보처리방침·문의 페이지는 추후 추가 예정입니다.</p>' +
-    '<p class="footer__copy">&copy; 2026 조용한 성장 가이드. 무단 전재·재배포를 금지합니다.</p>' +
-    "</div></div></footer>";
+    "</div></footer>";
 
   var headerMount = document.getElementById("site-header-mount");
   var footerMount = document.getElementById("site-footer-mount");

@@ -208,27 +208,43 @@
 }
 
 .post__related-list a {
-  color: var(--color-point);
+  color: #ff8a63;
+  font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--color-point-border);
-  text-underline-offset: 3px;
-  transition: color var(--transition-ui), text-decoration-color var(--transition-ui);
+  text-decoration-color: rgba(255, 138, 99, 0.72);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, text-decoration-thickness 0.2s ease;
 }
 
 .post__related-list a:hover {
-  color: var(--color-point-hover);
-  text-decoration-color: var(--color-point);
+  color: #ff9a79;
+  text-decoration-color: #ff9a79;
+  text-decoration-thickness: 2px;
 }
 
 .post__section a {
-  color: var(--color-point);
+  color: #ff9a79;
+  font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--color-point-border);
-  text-underline-offset: 3px;
-  transition: color var(--transition-ui), text-decoration-color var(--transition-ui);
+  text-decoration-color: rgba(255, 154, 121, 0.82);
+  text-decoration-thickness: 1.8px;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease, text-decoration-thickness 0.2s ease, text-shadow 0.2s ease;
 }
 
 .post__section a:hover {
-  color: var(--color-point-hover);
-  text-decoration-color: var(--color-point);
+  color: #ffaf93;
+  text-decoration-color: #ffaf93;
+  text-decoration-thickness: 2.2px;
+  text-shadow: 0 0 10px rgba(255, 159, 124, 0.2);
+}
+
+.post__section a:focus-visible,
+.post__related-list a:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
+  border-radius: 4px;
+  text-decoration-color: #ff9a79;
+  text-decoration-thickness: 2px;
 }
