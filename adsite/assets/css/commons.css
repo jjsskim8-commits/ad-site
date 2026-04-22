@@ -439,3 +439,11 @@ body {
     color: var(--color-text);
   }
 }
+
+/* Kakao 애드핏 광고 영역 */
+.ad-section {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+  width: 100%;
+}
