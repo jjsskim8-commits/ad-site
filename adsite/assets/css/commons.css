@@ -556,6 +556,22 @@ body {
   border: 0;
 }
 
+/* Netlify 폼 제출용 숨김 iframe */
+.contact-form__iframe {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .contact-form__note {
   margin-top: var(--space-lg);
   padding-top: var(--space-md);

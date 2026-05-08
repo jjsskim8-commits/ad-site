@@ -51,15 +51,16 @@ data-ad-height="250"></ins>
       <section class="post__section" aria-labelledby="contact-form-heading">
         <h2 class="post__h2" id="contact-form-heading">문의 양식</h2>
 
-        <!-- Netlify가 빌드 시 폼을 등록하려면 아래 속성 조합이 필요합니다 (name + data-netlify + POST + 숨김 form-name). -->
+        <!-- Netlify 공식 패턴: name="contact" + netlify (빌드 시 폼 등록). 나머지는 배포·UX용 확장입니다. -->
         <form
           id="contact-form"
           class="contact-form"
           name="contact"
+          netlify
+          netlify-honeypot="bot-field"
           method="POST"
           action="/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
+          target="netlify-target"
         >
           <input type="hidden" name="form-name" value="contact">
 
@@ -118,8 +119,16 @@ data-ad-height="250"></ins>
             <button type="submit" class="btn btn--primary contact-form__submit">문의 보내기</button>
           </p>
 
-          <p class="contact-form__note">제출 데이터는 Netlify가 처리하는 표준 방식으로 사이트 루트(/)로 전송됩니다. 문제가 있으면 이메일로 직접 문의해 주세요.</p>
+          <p class="contact-form__note">전송은 브라우저 표준 POST로 Netlify에 전달되며, 이 페이지는 그대로 유지됩니다. 접수 내역은 Netlify 대시보드 Forms에서 확인할 수 있습니다.</p>
         </form>
+
+        <iframe
+          id="netlify-form-iframe"
+          name="netlify-target"
+          title="문의 제출 처리"
+          src="about:blank"
+          class="contact-form__iframe"
+        ></iframe>
       </section>
     </article>
   </main>
