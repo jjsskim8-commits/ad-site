@@ -1,0 +1,4 @@
+# 사이트 정적 파일이 adsite/ 에 있을 때 Netlify가 올바른 루트로 배포하도록 합니다.
+# 대시보드에서 이미 Publish directory를 지정했다면 이 값과 일치하는지 확인하세요.
+[build]
+  publish = "adsite"

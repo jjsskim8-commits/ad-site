@@ -56,6 +56,7 @@
     '<li class="nav__item"><a class="nav__link" data-nav-key="collaboration" href="{{LINK:category/collaboration.html}}">협업 가이드</a></li>' +
     '<li class="nav__item"><a class="nav__link" data-nav-key="workplace" href="{{LINK:category/workplace.html}}">직장 적응</a></li>' +
     '<li class="nav__item"><a class="nav__link" data-nav-key="articles" href="{{LINK:category/articles.html}}">글 모음</a></li>' +
+    '<li class="nav__item"><a class="nav__link" data-nav-key="contact" href="{{LINK:contact.html}}">문의하기</a></li>' +
     "</ul></nav></div></header>";
 
   var footerTpl =
@@ -65,7 +66,7 @@
     '<div class="footer__links">' +
     '<a href="{{LINK:terms.html}}">이용약관</a>' +
     '<a href="{{LINK:privacy.html}}">개인정보처리방침</a>' +
-    '<a href="mailto:jjsskim8@gmail.com">문의하기</a>' +
+    '<a href="{{LINK:contact.html}}">문의하기</a>' +
     "</div>" +
     "</div></footer>";
 
