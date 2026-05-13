@@ -163,6 +163,11 @@ body {
   background: var(--color-point-soft);
 }
 
+.header__menu-btn:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
+}
+
 .nav__list {
   display: flex;
   flex-wrap: wrap;
@@ -190,6 +195,12 @@ body {
   border-bottom-color: var(--color-point);
 }
 
+.nav__link:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
 .footer {
   padding: 40px 0;
   background: #0f0f10;
@@ -213,6 +224,21 @@ body {
   color: #aaa;
 }
 
+.footer__copyright a {
+  color: #ccc;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer__copyright a:hover {
+  color: #fff;
+}
+
+.footer__copyright a:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
+}
+
 .footer__links {
   display: flex;
   gap: 16px;
@@ -225,6 +251,11 @@ body {
 
 .footer__links a:hover {
   text-decoration: underline;
+}
+
+.footer__links a:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
 }
 
 @media (max-width: 768px) {
@@ -294,6 +325,11 @@ body {
   color: var(--color-point-hover);
 }
 
+.btn:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
+}
+
 .card-list {
   display: grid;
   grid-template-columns: 1fr;
@@ -345,6 +381,12 @@ body {
   display: block;
   height: 100%;
   padding: calc(var(--space-md) + 0.35rem);
+}
+
+.card__link:focus-visible {
+  outline: 2px solid rgba(255, 138, 99, 0.55);
+  outline-offset: 2px;
+  border-radius: 10px;
 }
 
 .card__meta {
@@ -440,12 +482,14 @@ body {
   }
 }
 
-/* Kakao 애드핏 광고 영역 */
+/* Kakao 애드핏 광고 영역 — CLS 완화용 최소 높이 */
 .ad-section {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin: 40px 0;
   width: 100%;
+  min-height: 280px;
 }
 
 /* 문의하기 폼 (contact.html) */

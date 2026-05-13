@@ -10,9 +10,14 @@
     if (!btn || !nav) return;
 
     function setOpen(open) {
+      var isMobile = window.matchMedia("(max-width: 900px)").matches;
       nav.classList.toggle("is-open", open);
       btn.setAttribute("aria-expanded", open ? "true" : "false");
-      nav.setAttribute("aria-hidden", open ? "false" : "true");
+      if (isMobile) {
+        nav.setAttribute("aria-hidden", open ? "false" : "true");
+      } else {
+        nav.removeAttribute("aria-hidden");
+      }
     }
 
     setOpen(false);

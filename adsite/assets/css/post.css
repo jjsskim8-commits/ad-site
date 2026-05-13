@@ -1,7 +1,7 @@
 /* 글 상세(posts/*.html) — 포인트 컬러·pill·링크 commons.css 변수와 통일 */
 
 .post .post__article {
-  max-width: 640px;
+  max-width: min(42rem, 100%);
 }
 
 .post__breadcrumb {

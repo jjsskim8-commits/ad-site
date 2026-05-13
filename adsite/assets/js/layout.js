@@ -4,6 +4,27 @@
  * 모든 링크를 절대 URL로 풀어 file://·서브경로 배포 모두에서 동작하게 합니다.
  */
 (function () {
+  (function injectHeadHints() {
+    var head = document.head;
+    if (!head) return;
+    [
+      ["preconnect", "https://cdn.jsdelivr.net", "anonymous"],
+      ["preconnect", "https://pagead2.googlesyndication.com", ""],
+      ["dns-prefetch", "https://wcs.pstatic.net", ""],
+    ].forEach(function (row) {
+      var rel = row[0];
+      var href = row[1];
+      var cross = row[2];
+      var exists = head.querySelector('link[rel="' + rel + '"][href="' + href + '"]');
+      if (exists) return;
+      var l = document.createElement("link");
+      l.rel = rel;
+      l.href = href;
+      if (cross) l.crossOrigin = cross;
+      head.appendChild(l);
+    });
+  })();
+
   function getLayoutScriptUrl() {
     var el = document.currentScript;
     if (el && el.src) return el.src;
@@ -46,7 +67,7 @@
     '<div class="header__inner">' +
     '<div class="header__brand">' +
     '<a class="header__logo" href="{{LINK:index.html}}">조용한 성장 가이드</a>' +
-    '<p class="header__tagline">말수가 적어도 성장 흐름을 만드는 실전 가이드</p>' +
+    '<p class="header__tagline">내향형 개발 적응·공부 루틴 정보집 (jfine.kr)</p>' +
     "</div>" +
     '<button type="button" class="header__menu-btn" aria-expanded="false" aria-controls="site-nav">메뉴</button>' +
     '<nav class="nav" id="site-nav" aria-label="주요 메뉴">' +
@@ -62,7 +83,7 @@
   var footerTpl =
     '<footer class="footer" role="contentinfo">' +
     '<div class="footer__inner">' +
-    '<p class="footer__copyright">&copy; 2026 조용한 성장 가이드. All rights reserved.</p>' +
+    '<p class="footer__copyright">&copy; 2026 조용한 성장 가이드 · <a href="mailto:jjsskim8@gmail.com">jjsskim8@gmail.com</a></p>' +
     '<div class="footer__links">' +
     '<a href="{{LINK:terms.html}}">이용약관</a>' +
     '<a href="{{LINK:privacy.html}}">개인정보처리방침</a>' +

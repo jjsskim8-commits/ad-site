@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Major crawlers (Google, Naver, Bing, etc.) can use this sitemap.
-Sitemap: https://jjssk.netlify.app/sitemap.xml
+Sitemap: https://jfine.kr/sitemap.xml
